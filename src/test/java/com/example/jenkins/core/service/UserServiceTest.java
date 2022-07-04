@@ -18,7 +18,7 @@ public class UserServiceTest {
     @Test
     public void createTest() {
         User user = new User();
-        user.setName("TestUser");
+        user.setName("user1");
         user.setAge("30");
         User actualResult = userService.createOrUpdate(user);
         assertEquals(user, actualResult);
