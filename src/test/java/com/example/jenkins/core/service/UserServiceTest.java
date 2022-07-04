@@ -17,10 +17,11 @@ public class UserServiceTest {
 
     @Test
     public void createTest() {
+        User _user = new User();
         User user = new User();
         user.setName("user1");
         user.setAge("30");
         User actualResult = userService.createOrUpdate(user);
-        assertEquals(user, actualResult);
+        assertEquals(_user, actualResult);
     }
 }
