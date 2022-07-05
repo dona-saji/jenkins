@@ -22,6 +22,6 @@ public class UserServiceTest {
         user.setName("user");
         user.setAge("30");
         User actualResult = userService.createOrUpdate(user);
-        assertEquals(_user, actualResult);
+        assertEquals(user, actualResult);
     }
 }
